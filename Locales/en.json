@@ -1,0 +1,355 @@
+{
+  "login": {
+    "welcome": "Welcome {{name}} to our localized app!",
+    "login_button": "Login",
+    "signup_button": "Sign Up",
+    "signup_button_new": "Sign Up",
+
+    "or":"or",
+    "signInWithFacebook":"FACEBOOK",
+    "signInWithGoogle":"GOOGLE",
+    "orSignUpWith":"or Sign Up With",
+    "confirm_message":"New password and confirm password does not match",
+    "password message":"Password should be at least 6 number and contain characters"
+
+
+  },
+  "user_profile": {
+    "title": "Your Profile"  
+  },
+  "signin":{
+    "forget_password":"Forget Password?",
+    "password":"Password",
+    "recover_password":"Recover Password"
+
+  },
+  "signup":{
+    "first_name":"First Name",
+    "last_name":"Last Name",
+    "choose_country":"Choose Country",
+    "choose_destination":"Destination",
+
+    "confirm_password":"Confirm Password",
+    "confirm_password_new":"Confirm New Password",
+
+    "have_account":"Do you have an account?Login",
+    "privacy":"By clicking the Sign Up button I agree  the User Agreement",
+    "privacy2":"and Privacy Policy",
+
+    "verify":"Verify",
+    "jordan":"Jordan",
+    "sudia":"Saudi Arabia",
+    "uae":"United Arab Emirates",
+    "qatar":"Qatar"
+  },
+  "drivinglicense":{
+    "upload_car_license":"Upload Car License",
+    "upload_car_license_front":"Car Register License/ Front Side",
+    "upload_car_license_back":"Car Register License/ Back Side",
+    "upload_your_id":"Upload Your ID Card",
+    "upload_your_passport":"Upload Your Passport",
+    "continue":"Continue  ",
+    "skip":"Skip",
+    "cancel":"Cancel",
+    "capture":"Capture"
+  },
+  "carInformation":{
+    "full_name":"Full Name",
+    "first_name":"First Name",
+    "second_name":"Second Name",
+    "third_name":"Third Name",
+    "last_name":"Last Name",
+    "id_number":"National Number",
+    "insurance_type":"Insurance Type",
+    "choose_insurance_type":"Select Insurance Type",
+    "car_type":"Car Type",
+    "choose_car_type":"Select Car Type",
+    "vehicle_number":"Car Plate Number",
+    "vehicle_encoding":"Car Encoding",
+    "car_model":"Car Model",
+    "Choose car_model":"Select Car Model",
+
+    "car_category":"Car Category",
+    "Choose_car_category":"Select Car Category",
+    "manufacturing_year":"Manufacturing Year",
+    "choose_manufacturing_year":"Select Manufacturing Year",
+    "driver":"Car Transmission",
+    "choose_driver":"Select Car Transmission",
+    "fuel_type":"Fuel Type",
+    "choose_fuel_type":"Select Fuel Type",
+    "car_salary":"Car Value",
+    "start_date":"Insurance Start Date",
+    "end_date":"Insurance Expiration Date",
+    "end_date2":"Vehicle License Expiration Date",
+    "gasoline":"Gasoline",
+    "automatic":"Automatic",
+    "manually":"Manually",
+    "supplementary":"Complementary",
+    "comprehensive":"Comprehensive",
+    "Electricity":"Electric",
+    "Hybrid":"Hybrid",
+    "diesel":"Diesel",
+    "Bolisa_number":"Current Policy Number / رقم بوليصة ضد الغير",
+    "car_info":"Car Information",
+    "user_info":"User Information",
+    "insurance_info":"Insurance Information",
+    "accedinet_ques":"Have you caused any traffic accident during the past 12 months ?",
+    "beneficiary":"Beneficiary",
+    "himself":"Myself",
+    "other":"Else",
+    "Small vehicle":"Small Vehicle",
+    "big vehicle":"Big Vehicle",
+    "insured":"The name of the insured"
+
+
+
+
+
+  },
+  "insurancecompanies":{
+    "insurance_companies":"Insurance Companies",
+    "sort":"Sort",
+    "cancel":"Cancel",
+    "hightolow":"High to Low",
+    "lowtohigh":"Low to High",
+    "insurance_company":"Insurance Company",
+    "choose_insurance_company":"Select Insurance Company",
+
+    "choose_reason":"Choose Reason",
+    "Terms_and_Conditions":"Terms and Condition / Contact",
+    "addons":"Add-ons",
+    "total":"Total",
+    "Including_taxes":"Including taxes",
+
+    "total2":"Total premium",
+
+    "agree_the_termas":"I agree the terms and conditions",
+    "terms_text":"To read the terms and conditions click here"
+
+  },
+  "damagestep":{
+    "front":"Front Side",
+    "back":"Back Side",
+    "left":"Left Side",
+    "right":"Right Side",
+    "Car_photos":"Car Photos"
+
+  },
+  "header":{
+    "home":"Home Page",
+    "orders":"Orders",
+    "help":"Contact Us",
+    "setting":"Settings",
+    "Arabic":"عربي",
+    "english":"English",
+    "logout":"Log Out",
+    "hello":"Hello",
+    "notifications":"Notifications"
+
+  },
+  "lifeinsurance":{
+    "name":"Full Name",
+    "age":"Age",
+    "choose_age":"Select Age",
+
+    "birthday":"Date of Birth",
+    "value_of_insurance":"Limit of Insurance",
+    "choose_value_of_insurance":"Select Limit of Insurance",
+    "beneficiaries":"Beneficiaries",
+    "father":"Father",
+    "mother":"Mother",
+    "sister":"Sister",
+    "brother":"Brother",
+    "daughters":"Daughters",
+    "percentage":"Percentage",
+    "wife":"Wife",
+    "husband":"Husband",
+    "message":"Total Percentage of Beneficiaries Should be 100"
+
+
+  },
+  "travelinsurance":{
+    "destination_from":"From",
+    "destination_to":"To",
+    "choose_to":"Select To",
+    "Passport_number":"Passport Number",
+    "travel_date":"Travel Date",
+    "days_to_stay":"Days To Stay",
+    "days_to_stay_choose":"Select Days To Stay",
+
+    "jordan":"Jordan",
+    "usa":"US",
+    "europe":"Schengen/Europe",
+    "uk":"UK",
+    "world_wide":"World Wide",
+    "7days":"Up to 7 Days",
+    "14days":"Up to 14 Days",
+    "21days":"Up to 21 Days",
+    "31days":"Up to 31 Days",
+    "62days":"Up to 62 Days",
+    "92days":"Up to 92 Days (Max. per stay 62 days)",
+    "6month":"Up to 6 Months (Max. per stay 62 days)",
+    "1year":"One Year (Max. per stay 62 days)",
+    "2year":"Two Years (Max. per stay 62 days)",
+    "3year":"Three Years (Max. per stay 62 days)",
+    "4year":"Four Years (Max. per stay 62 days)",
+    "5year":"Five Years (Max. per stay 62 days)",
+    "Till 65 Years":"Under 65",
+    "65-75":"65-75",
+    "76-80":"76-80",
+    "Over 80 Years":"Over 80 Years",
+    "phone_number":"Phone Number"
+
+
+  },
+  "shippinginsurance":{
+    "what_your_shipping":"What Your Shipping",
+    "shipped_date":"Shipped Date",
+    "shipped_from":"Shipped From",
+    "shipped_to":"Shipped To",
+    "carrier_name":"Carrier Name",
+    "upload_bill":"Upload Bill"
+
+
+
+  },
+  "profile":{
+    "save_changes":"Save Changes",
+    "change_password":"Change Password?",
+    "reset_password":"Reset Password",
+    "current_password":"Current Password",
+    "new_password":"New Password",
+    "confirm_password":"Confirm Password"
+  },
+  "setting":{
+    "profile":"Profile",
+    "language":"Language",
+    "notifications":"Notifications",
+    "privacy":"Privacy policy",
+    "user_agreement":"User Agreement"
+  },
+  "payment":{
+    "payment":"Payment",
+    "name_of_insured":"Name Of Insured",
+    "insurance_company":"Insurance Company",
+    "Additional_Services":"Additional Services",
+    "total":"Total",
+    "Online_payment":"VISA/MASTERCARD",
+    "Payment_upon_delivery":"Cash on Delivery (COD)",
+    "Pay_now":"Pay Now",
+"payment_method":"Payment Methods",
+    "insurance_type":"Insurance Type",
+    "Card_Number":"Card Number",
+    "CARDHOLDER_NAME":"CARDHOLDER NAME",
+    "EXPIRE_DATE":"EXPIRE DATE",
+    "Expiry_Month":"Expire Month",
+    "Expiry_Year":"Expire Year",
+    "CVV":"CVV",
+    "SAVEـCARD":"SAVE CARD",
+    "city":"City",
+  "address":"Address",
+  "details":"Details",
+  "send":"Send",
+  "address_name":"Address Name",
+  "street_name":"Street",
+  "Bulding":"Building No",
+  "floor":"Floor",
+  "apartment_number":"Apartment No",
+  "Additional Description":"Additional Description",
+  "area":"Area",
+  "Bulding_type":"Building Type",
+  "house":"House",
+  "Apartment":"Apartment",
+  "Office":"Office",
+  "bolisa_info":"Bolisa Information",
+  "contact_information":"Contact Information",
+  "Delivery Address":"Delivery Address",
+  "Premium":"Premium",
+  "delivery":"Delivery",
+  "confirm":"Confirm"
+
+
+  },
+  "help":{
+    "subject":"Subject",
+    "email":"Email",
+    "message":"Message",
+    "submit":"Submit",
+    "phone":"Phone"
+
+
+  },
+  "message":{
+    "fill_message":"Please make sure to fill out all fields",
+    "error":"Error",
+    "success":"Success",
+    "email_not_valid":"Email is not valid!" 
+
+  },
+  "resturants_insurance":{
+    "upload_Professionـlicence":"Upload Profession Licence",
+    "upload_CommercialـRegister":"Upload Commerical Register"
+},
+"servant_insurance":{
+  "nationality":"Nationality"
+},
+"cancer_care_program":{
+  "coverage":"Coverage",
+  "choose_coverage":"Select Coverage",
+
+  "are_you_jordanian":"Are You Jordanian?"
+
+},
+"health_insurance":{
+  "Do_you_have_any_diseases":"Do you have any diseases?",
+  "yes":"Yes",
+  "no":"No"
+},
+"Done_screen":{
+  "add_order_message":"Your order has been submitted successfully",
+  "contact_message":"Your policy will be issued within 48 hours",
+  "contact_message2":"We will contact you within 48 Hours ",
+  "cancel_request":"Cancel Request"
+
+},
+"order_page":{
+  "status":"Submission Status",
+  "insurance_type":"Insurance Type",
+  "created_at":"Date of submission",
+  "order_id":"Order ID",
+  "car_insurance":"Motor Insurance",
+  "life_insurance":"Life Insurance",
+  "health_insurance":"Health Insurance",
+  "travel_insurance":"Travel Insurance",
+  "cargo_insurance":"Cargo Insurance",
+  "servant_insurance":"Servant Insurance",
+  "cancer_insurance":"Cancer Insurance",
+  "resturants_insurance":"Resturants Insurance",
+  "all_orders":"All Orders",
+  "Filter by type":"Filter By Type",
+"last_two_weeks":"Last Two Weeks",
+"last_one_month":"Last 30 days",
+"last_three_month":"Last 3 Months",
+"more_than_three_months":"Last 6 Months",
+"Filter_by_date":"Filter By Date",
+"offerdprice":"Offered Price",
+"reject":"Reject",
+"accept":"Accept",
+"notes":"Notes",
+"enter_reason":"Enter Reason",
+"insurance_price":"Insurance Price",
+"quoted_price":"Quoted Price"
+
+
+
+},
+"add_photo":{
+  "add_phot_title":"Add Photo",
+  "take_photo":"Take Photo",
+  "choose_from_gallery":"Choose From Gallery",
+  "cancel":"Cancel"
+  
+}
+
+
+}

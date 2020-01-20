@@ -1,0 +1,332 @@
+{
+  "login": {
+    "welcome": "{{name}}, مرحبا بك",
+    "login_button": "تسجيل الدخول",
+    "signup_button": "إنشاء حساب",
+    "signup_button_new": "إنشاء حساب جديد",
+
+    "or":"أو",
+    "signInWithFacebook":"فيسبوك",
+    "signInWithGoogle":"جوجل",
+    "orSignUpWith":"أو تسجيل الدخول باستخدام",
+    "confirm_message":"كلمة المرور الجديدة وتأكيد كلمة المرور غير متطابقتين",
+    "password message":"يجب أن تكون كلمة المرور 6 أرقام على الأقل وأن تحتوي على أحرف"
+  },
+  "user_profile": {
+    "title": "ملف شخصي"  
+  },
+  "signin":{
+    "forget_password":"هل نسيت كلمة المرور؟",
+    "password":"كلمة المرور",
+    "recover_password":"إستعادة كلمة المرور"
+  },
+  "signup":{
+    "first_name":"الإسم الأول",
+    "last_name":"إسم العائلة",
+    "choose_country":"اختر بلد",
+    "choose_destination":"الوجهة",
+
+    "confirm_password":"تأكيد كلمة المرور",
+    "have_account":"هل لديك حساب؟ تسجيل الدخول",
+    "privacy":"بالضغط على زر انشاء حساب أوافق على اتفاقية المستخدم",
+    "privacy2":"وسياسة الخصوصية",
+
+    "verify":"التحقق",
+    "jordan":"الأردن",
+    "sudia":"السعودية",
+    "uae":"الامارات",
+    "qatar":"قطر"
+  },
+  "drivinglicense":{
+    "upload_car_license":"تحميل رخصة المركبة",
+    "upload_car_license_front":"رخصة تسجيل المركبة / الوجه الأمامي",
+    "upload_car_license_back":"رخصة تسجيل المركبة / الوجه الخلفي",
+    "upload_your_id":"تحميل هويتك الشخصية",
+    "upload_your_passport":"تحميل جواز السفر",
+    "continue":"متابعة",
+    "skip":"تخطي",
+    "cancel":"إلغاء",
+    "capture":"التقاط"
+
+  },
+  "carInformation":{
+    "full_name":"اسم المالك",
+    "first_name":"الاسم الاول",
+    "second_name":"الاسم الثاني",
+    "third_name":"الاسم الثالث",
+    "last_name":"الاسم الاخير",
+    "id_number":"الرقم الوطني",
+    "insurance_type":"فئة التأمين",
+    "choose_insurance_type":"اختر فئة التأمين",
+
+    "car_type":"نوع المركبة",
+    "choose_car_type":"اختر نوع المركبة",
+    "vehicle_number":"رقم اللوحة",
+     "vehicle_encoding":"ترميز المركبة",
+    "car_model":"صنف المركبة",
+    "Choose car_model":"اختر صنف المركبة",
+
+    "car_category":"فئة المركبة",
+    "Choose_car_category":"اختر فئة المركبة",
+    "manufacturing_year":"سنة الصنع",
+    "choose_manufacturing_year":"اختر سنة الصنع",
+    "driver":"ناقل الحركة",
+    "choose_driver":"اختر ناقل الحركة",
+    "fuel_type":"نوع الوقود",
+    "choose_fuel_type":"اختر نوع الوقود",
+    "car_salary":"قيمة المركبة",
+    "start_date":"تاريخ بدء التأمين",
+    "end_date":"تاريخ إنتهاء التأمين",
+    "end_date2":"تاريخ إنتهاء ترخيص المركبة",
+    "gasoline":"بنزين",
+    "automatic":"اتوماتيك",
+    "manually":"عادي",
+    "supplementary":"التكميلي",
+    "comprehensive":"الشامل",
+    "Electricity":"كهرباء",
+    "Hybrid":"بنزين+كهرباء",
+    "diesel":"ديزل",
+    "Bolisa_number":"رقم البوليصه / ضد الغير",
+    "car_info":"معلومات المركبة",
+    "user_info":"معلومات المالك",
+    "insurance_info":"معلومات التأمين",
+    "accedinet_ques":"هل تسببْتَ في أي حادث مروري خلال ال 12شهراً الماضية؟",
+    "beneficiary":"المستفيد",
+"himself":"نفسه",
+"other":"آخر",
+    "Small vehicle":"ركوب صغير",
+    "big vehicle":"ركوب كبير",
+    "insured":"اسم المؤمن عليه"
+
+  },
+  "insurancecompanies":{
+    "insurance_companies":"شركات التأمين",
+    "sort":"ترتيب",
+    "cancel":"إلغاء",
+    "hightolow":"من الاعلى الى الاقل",
+    "lowtohigh":"من الاقل الى الاعلى",
+    "insurance_company":"شركة التأمين",
+    "choose_insurance_company":"اختر شركة التأمين",
+    "choose_reason":"اختر سبب",
+    "Terms_and_Conditions": "الشروط والأحكام",
+    "addons":"الإضافات",
+    "total":"المجموع",
+    "Including_taxes":"شامل الضرائب",
+    "total2":"اجمالي القسط",
+    "agree_the_termas":"أوافق على الشروط والاحكام",
+    "terms_text":"لقراءة الشروط والأحكام اضغط هنا"
+  },
+  "damagestep":{
+    "front":"من الأمام",
+    "back":"من الخلف",
+    "left":"من اليسار",
+    "right":"من اليمين",
+    "Car_photos":"صور المركبة"
+  },
+  "header":{
+    "home":"الصفحة الرئيسية",
+    "orders":"طلباتي",
+    "help":"تواصل معنا",
+    "setting":"الإعدادات",
+    "Arabic":"العربية",
+    "english":"English",
+    "logout":"تسجيل الخروج",
+    "hello":"مرحبا",
+    "notifications":"الإشعارات"
+
+  },
+  "lifeinsurance":{
+    "name":"الإسم الرباعي",
+    "age":"العمر",
+    "choose_age":"اختر العمر",
+    "birthday":"تاريخ الميلاد",
+    "value_of_insurance":"سقف التأمين",
+    "choose_value_of_insurance":"اختر سقف التأمين",
+
+    "beneficiaries":"المنتفعين",
+    "father":"الأب",
+    "mother":"الأم",
+    "sister":"الأخت",
+    "brother":"الأخ",
+    "daughters":"الأبناء",
+    "percentage":"نسبة التعويض",
+    "wife":"الزوجة",
+    "husband":"الزوج",
+    "message":"يجب أن تكون النسبة المئوية الإجمالية للمنتفعين 100"
+
+  },
+  "travelinsurance":{
+    "destination_from":"من",
+    "destination_to":"إلى",
+    "choose_to":"اختر إلى",
+    "Passport_number":"رقم جواز السفر",
+    "travel_date":"تاريخ السفر",
+    "days_to_stay":"عدد أيام الإقامة",
+    "days_to_stay_choose":"اختر عدد أيام الإقامة",
+
+    "jordan":"الأردن",
+    "usa":"الولايات المتحدة الأمريكية",
+    "europe":"شنغن / أوروبا",
+    "uk":"المملكة المتحدة",
+    "world_wide":"جميع أنحاء العالم",
+    "7days":"تصل إلى 7 أيام",
+    "14days":"تصل إلى 14 يوم",
+    "21days":"تصل إلى 21 يوم",
+    "31days":"تصل إلى 31 يوم",
+    "62days":"تصل إلى 62 يوم",
+    "92days":"تصل إلى 92 يوم (كحد أقصى لكل إقامة 62 يومًا)",
+    "6month":"تصل إلى 6 أشهر(كحد أقصى لكل إقامة 62 يومًا)",
+    "1year":"1 سنه (كحد أقصى لكل إقامة 62 يومًا)",
+    "2year":"2 سنه (كحد أقصى لكل إقامة 62 يومًا)",
+    "3year":"3 سنه (كحد أقصى لكل إقامة 62 يومًا)",
+    "4year":"4 سنه (كحد أقصى لكل إقامة 62 يومًا)",
+    "5year":"5 سنه (كحد أقصى لكل إقامة 62 يومًا)",
+    "Till 65 Years":"تحت ال 65",
+    "65-75":"65-75",
+    "76-80":"76-80",
+    "Over 80 Years":"أكثر من 80 سنة",
+    "phone_number":"رقم الهاتف"
+  },
+  "shippinginsurance":{
+    "what_your_shipping":"طريقة الشحن",
+    "shipped_date":"تاريخ الشحن",
+    "shipped_from":"الشحن من",
+    "shipped_to":"الشحن إلى",
+    "carrier_name":"اسم الناقل",
+    "upload_bill":"تحميل الفاتورة"
+  },
+  "profile":{
+    "save_changes":"حفظ المعلومات",
+    "change_password":"تغيير كلمة المرور؟",
+    "reset_password":"تغيير كلمة المرور",
+    "current_password":"كلمة المرور الحالية",
+    "new_password":"كلمة المرور الجديدة",
+    "confirm_password":"تأكيد كلمة المرور",
+    "confirm_password_new":"تأكيد كلمة المرور الجديدة"
+
+  },
+  "setting":{
+    "profile":"الحساب",
+    "language":"اللغة",
+    "notifications":"الإشعارات",
+    "privacy":"سياسة الخصوصية",
+    "user_agreement":"اتفاقية المستخدم"
+  },
+  "payment":{
+    "payment":"الدفع",
+    "name_of_insured":"اسم المؤمن عليه",
+    "insurance_company":"شركة التأمين",
+    "Additional_Services":"الخدمات الإضافية",
+    "total":"المجموع",
+    "Online_payment":"الدفع اونلاين",
+    "Payment_upon_delivery":"الدفع عند التسليم",
+    "Pay_now":"إدفع الآن",
+    "payment_method":"طرق الدفع",
+
+    "insurance_type":"نوع التأمين",
+    "Card_Number":"رقم البطاقة",
+    "CARDHOLDER_NAME":"إسم حامل البطاقه",
+    "EXPIRE_DATE":"تاريخ إنتهاءالصلاحية",
+    "Expiry_Month":"شهر انتهاء الصلاحية",
+    "Expiry_Year":"سنة إنتهاء الصلاحيه",
+    "CVV":"CVV",
+    "SAVEـCARD":"حفظ البطاقة",
+    "city":"المدينة",
+    "address":"العنوان",
+    "details":"التفاصيل",
+    "send":"إرسال",
+    "address_name":"إسم العنوان",
+    "street_name":"الشارع",
+    "Bulding":"رقم المبنى",
+    "floor":"الطابق",
+    "apartment_number":"رقم الشقة",
+    "Additional Description":"وصف إضافي",
+    "area":"المنطقة",
+    "Bulding_type":"نوع البناء",
+    "house":"بيت",
+    "Apartment":"شقة",
+    "Office":"مكتب",
+    "bolisa_info":"معلومات البوليصة",
+    "contact_information":"معلومات الاتصال",
+    "Delivery Address":"عنوان التوصيل",
+    "Premium":"قسط التأمين",
+    "delivery":"التوصيل",
+    "confirm":"تأكيد"
+  },
+  "help":{
+    "subject":"الموضوع",
+    "email":"البريد الإلكتروني",
+    "message":"الرسالة",
+    "submit":"إرسال",
+    "phone":"هاتف"
+  },
+  "message":{
+    "fill_message":"يرجى التأكد من ملء جميع الحقول",
+    "error":"خطأ",
+    "success":"نجاح",
+    "email_not_valid":"البريد الإلكتروني غير صحيح!"
+  },
+  "resturants_insurance":{
+      "upload_Professionـlicence":"تحميل رخصة المهن",
+      "upload_CommercialـRegister":"تحميل السجل التجاري"
+  },
+  "servant_insurance":{
+    "nationality":"الجنسية"
+  },
+  "cancer_care_program":{
+    "coverage":"التغطية",
+    "choose_coverage":"اختر التغطية",
+    "are_you_jordanian":"هل أنت أردني؟"
+  },
+
+  "health_insurance":{
+    "Do_you_have_any_diseases":"هل لديك أي أمراض ؟",
+    "yes":"نعم",
+    "no":"لا"
+  },
+  "Done_screen":{
+    "add_order_message":"تم ارسال طلبك بنجاح",
+    "contact_message":"سيتم اصدار التأمين الخاص بك خلال 48 ساعة",
+    "contact_message2":"سيتم التواصل معك خلال 48 ساعة",
+    "cancel_request":"إلغاء الطلب"
+  },
+  "order_page":{
+    "status":"حالة الطلب",
+    "insurance_type":"نوع التأمين",
+    "created_at":"تاريخ التقديم",
+    "order_id":"رقم الطلب",
+    "car_insurance":"تأمين المركبات",
+    "life_insurance":"تأمين الحياة",
+    "health_insurance":"تأمين الصحة",
+    "travel_insurance":"تأمين السفر",
+    "cargo_insurance":"تأمين البضائع",
+    "servant_insurance":"تأمين الخادمات",
+    "cancer_insurance":"برنامج رعاية السرطان",
+    "resturants_insurance":"تأمين المطاعم",
+    "all_orders":"جميع الطلبات",
+    "Filter by type":"تصنيف حسب النوع ",
+    "last_two_weeks":"آخر اسبوعين",
+"last_one_month":"آخر 30 يوماً",
+"last_three_month":"آخر 3 أشهر",
+"more_than_three_months":"آخر 6 أشهر",
+"Filter_by_date":"تصنيف حسب التاريخ",
+"offerdprice":"السعر المعروض",
+"reject":"رفض",
+"accept":"موافقة",
+"notes":"الملاحظات",
+"enter_reason":"ادخل سبب",
+"insurance_price":"سعر التأمين",
+"quoted_price":"عرض سعر"
+
+
+
+  },
+  "add_photo":{
+    "add_phot_title":"إضافة صورة",
+    "take_photo":"التقاط صورة",
+    "choose_from_gallery":"اختر من المعرض",
+    "cancel":"إلغاء"
+    
+  }
+  
+}

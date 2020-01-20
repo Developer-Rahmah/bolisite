@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838070720176",
+    "firebase_url": "https://bolisati-ca882.firebaseio.com",
+    "project_id": "bolisati-ca882",
+    "storage_bucket": "bolisati-ca882.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838070720176:android:7bf2339a766763bf",
+        "android_client_info": {
+          "package_name": "com.qiotic.bolisite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838070720176-md61054d19pk0sanlno8eojvarqo0ogb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeCN6dbS-VhAuFSEa6Jm46di3mZC07XZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838070720176-md61054d19pk0sanlno8eojvarqo0ogb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
