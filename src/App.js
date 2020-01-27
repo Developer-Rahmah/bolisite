@@ -8,8 +8,11 @@ import rootReducer from "./reducers";
 import SideBar from "./components/sideBar";
 import Header from "./components/header";
 import Router from "./Router";
-import I18n from "react-native-i18n";
-import { AppLoading, Asset, Font, Icon,SplashScreen,Permissions, Notifications,Constants } from 'expo';
+import I18n from "i18n-js";
+import { AppLoading, Asset, Icon,SplashScreen, Notifications } from 'expo';
+import * as Permissions from 'expo-permissions'
+import * as Font from 'expo-font';
+
 import {Actions} from "react-native-router-flux";
 import client from './constants';
 

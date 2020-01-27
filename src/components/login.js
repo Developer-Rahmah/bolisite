@@ -14,7 +14,7 @@ import Header from './AuthHeader'
 import SideBar from "./sideBar";
 import {blueBackgroundColor,buttonText,inputStyle,transparentBackground,transparentBorder,phoneInputStyle,centerStyle,touchableOpacityText,labelStyle} from '../theme';
 const dimensions=Dimensions.get('window');
-import { Constants } from 'expo';
+import Constants from 'expo-constants'
 
 class Login extends Component{
   constructor(props){

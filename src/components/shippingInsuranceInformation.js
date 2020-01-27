@@ -5,10 +5,12 @@ import {CardItem,Body,Button,Text, Icon, Content,View,Drawer,Label,Input,Right,L
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import {transparentBackground,centerStyle} from '../theme';
 import {Actions} from "react-native-router-flux";
-import {  ImagePicker, Camera, Permissions } from 'expo';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import Header from './header';
 import SideBar from "./sideBar";
-import { Constants } from 'expo';
+import Constants from 'expo-constants'
 const deviceId = Constants.deviceId;
 import {Spinner} from "./common/Spinner";
 
@@ -162,10 +164,11 @@ if(this.state.billImage5!=""){
 
    fetch(apiUrl, options).then(res=>{
              console.log('response test',res)
-             var r=JSON.parse(res._bodyInit)
+             res.json().then(async data => {
+
              if(Actions.currentScene=="shippinginsuranceinformation"){
 
-             Actions.DoneScreen2({user_id:this.props.user_id,order_id:r.order_id,name:"shipping"})
+             Actions.DoneScreen2({user_id:this.props.user_id,order_id:data.order_id,name:"shipping"})
              }
              this.setState({counter:1})
             showBillImage2=false
@@ -174,7 +177,8 @@ if(this.state.billImage5!=""){
             showBillImage5=false
              this.setState({loading_d:false})
             })
-
+        
+              });
             
             var formData2= new FormData();
       

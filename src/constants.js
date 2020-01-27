@@ -1,7 +1,7 @@
 // import DeviceInfo from "react-native-device-info";
 import axios from "axios";
 import Expo from 'expo';
-import { Constants } from 'expo';
+import Constants from 'expo-constants';
 // import { Permissions, Notifications } from 'expo';
 // const token = await Notifications.getExpoPushTokenAsync();
 // in bare apps:

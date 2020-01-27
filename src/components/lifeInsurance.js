@@ -51,7 +51,11 @@ import Header2 from './headerWithoutArrow';
 import SideBar from "./sideBar";
 const dimensions = Dimensions.get("window");
 import DatePicker from "react-native-datepicker";
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {
   uploadButton,
   continueText,
@@ -694,24 +698,22 @@ console.log("Scanned_id_Image in life",scanned_id_image)
         cur.setState({x: false});
         this.setState({aa: true});
 
-        ImageEditor.cropImage(
-          this.state.id_image,
-          cropData,
-          uri => {
-            ImageStore.getBase64ForTag(
-              uri,
-              base64data => {
-                this.setState({id_image64: base64data});
-              },
-              err => {
-                //alert(JSON.stringify(err))
-              }
-            );
-          },
-          err => {
-            //alert(JSON.stringify(err))
-          }
-        );
+        // ImageEditor.cropImage(
+        //   this.state.id_image,
+        //   cropData,
+        //   uri => {
+        //     ImageStore.getBase64ForTag(
+        //       uri,
+        //       base64data => {
+        //         this.setState({id_image64: base64data});
+        //       },
+        //       err => {
+        //       }
+        //     );
+        //   },
+        //   err => {
+        //   }
+        // );
 
       });
     }

@@ -4,10 +4,15 @@ import {CardItem,Body,Button,Text, Icon, Content,View,Drawer} from 'native-base'
 import {uploadButton,continueText,uploadLicenseText,skipButton,skipText,continueButton} from '../assests/styles/drivingLicenseStyles';
 import {transparentBackground,centerStyle} from '../theme';
 import {Actions} from "react-native-router-flux";
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import axios from 'axios';
 import Header2 from './headerWithoutArrow';
 import * as homeAction from "../actions/homeAction";
+import * as FileSystem from 'expo-file-system';
 
 import * as drivingLicenseAction from '../actions/drivingLicenseAction';
 import { connect } from 'react-redux';
@@ -311,24 +316,28 @@ var x=false
         cur.license.name.val=""
         cur.license.id.val=""
         // alert(data.width.toString() + "-" +data.height.toString()+"-"+data.pictureOrientation.toString())
-        ImageEditor.cropImage(
+        // ImageEditor.cropImage(
+        //   d.uri,
+        //   cropData,
+        //   uri => {
+        //     ImageStore.getBase64ForTag(
+        //       uri,
+        //       base64data => {
+        //         cur.uploadPost(base64data,d.uri);
+        //       },
+        //       err => {
+        //       }
+        //     );
+        //   },
+        //   err => {
+        //   }
+        // );
+        const file = await FileSystem.readAsStringAsync(
           d.uri,
-          cropData,
-          uri => {
-            ImageStore.getBase64ForTag(
-              uri,
-              base64data => {
-                cur.uploadPost(base64data,d.uri);
-              },
-              err => {
-                //alert(JSON.stringify(err))
-              }
-            );
-          },
-          err => {
-            //alert(JSON.stringify(err))
-          }
-        );
+          {
+              encoding: FileSystem.EncodingType.Base64,
+          });
+          cur.uploadPost(file,d.uri);
       });
       if(Platform.OS=="ios"){
       setTimeout(() => {if(x==false&&this.state.showCameraView){

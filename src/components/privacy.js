@@ -1,11 +1,12 @@
 
 import React, { Component } from 'react';
-import {ImageBackground,Dimensions,Keyboard,StatusBar,WebView} from 'react-native';
+import {ImageBackground,Dimensions,Keyboard,StatusBar} from 'react-native';
 import {Drawer} from 'native-base';
 import * as privacyAction from '../actions/privacyAction'
 import { connect } from 'react-redux';
 import Header from './header';
 import SideBar from "./sideBar";
+import { WebView } from 'react-native-webview';
 
 
 const dimensions=Dimensions.get('window');

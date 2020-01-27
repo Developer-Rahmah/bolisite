@@ -4,10 +4,12 @@ import {CardItem,Body,Button,Text, Icon, Content,View,Drawer} from 'native-base'
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import {transparentBackground,centerStyle} from '../theme';
 import {Actions} from "react-native-router-flux";
-import {  ImagePicker, Camera, Permissions } from 'expo';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import Header from './header';
 import SideBar from "./sideBar";
-import { Constants } from 'expo';
+import Constants from 'expo-constants'
 import {Spinner} from "./common/Spinner";
 
 const deviceId = Constants.deviceId;
@@ -87,12 +89,18 @@ formData.append("user_id",user_id)
 
    fetch(apiUrl, options).then(res=>{
              console.log('response test',res)
-             var r=JSON.parse(res._bodyInit)
-             if(Actions.currentScene=="resturantsinsurance"){
+             var d=res._bodyInit.toString()
+            //  var r=JSON.parse(d)
+            //  console.log("rrrrrr",r)
+            res.json().then(async data => {
+            console.log("7777",data)
+            if(Actions.currentScene=="resturantsinsurance"){
 
-             Actions.DoneScreen2({user_id:this.props.user_id,order_id:r.order_id,name:"resturant"})
-             }
-             this.setState({loading_d:false})
+              Actions.DoneScreen2({user_id:this.props.user_id,order_id:data.order_id,name:"resturant"})
+              }
+              this.setState({loading_d:false})
+            });
+       
 
 
    }

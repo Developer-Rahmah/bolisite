@@ -51,7 +51,11 @@ import Header2 from './headerWithoutArrow';
 
 import SideBar from "./sideBar";
 import {strings} from "../../Locales/i18n";
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {
   uploadButton,
   continueText,
@@ -444,24 +448,24 @@ captureBack=true;
         };
         var cur = this;
         this.setState({drivingLiceneseImage: d.uri});
-   ImageEditor.cropImage(
-          this.state.drivingLiceneseImage,
-          cropData,
-          uri => {
-            ImageStore.getBase64ForTag(
-              uri,
-              base64data => {
+  //  ImageEditor.cropImage(
+  //         this.state.drivingLiceneseImage,
+  //         cropData,
+  //         uri => {
+  //           ImageStore.getBase64ForTag(
+  //             uri,
+  //             base64data => {
        
-                 this.setState({driving_licenese_image64: base64data});
+  //                this.setState({driving_licenese_image64: base64data});
 
-              },
-              err => {
-              }
-            );
-          },
-          err => {
-          }
-        );
+  //             },
+  //             err => {
+  //             }
+  //           );
+  //         },
+  //         err => {
+  //         }
+  //       );
         cur.setState({x: false});
    
 
@@ -497,26 +501,24 @@ captureBack=true;
         };
         var cur = this;
         this.setState({drivingLiceneseImageBack: d.uri});
-   ImageEditor.cropImage(
-          this.state.drivingLiceneseImageBack,
-          cropData,
-          uri => {
-            ImageStore.getBase64ForTag(
-              uri,
-              base64data => {
+  //  ImageEditor.cropImage(
+  //         this.state.drivingLiceneseImageBack,
+  //         cropData,
+  //         uri => {
+  //           ImageStore.getBase64ForTag(
+  //             uri,
+  //             base64data => {
        
-                 this.setState({driving_licenese_image64: base64data});
+  //                this.setState({driving_licenese_image64: base64data});
 
-              },
-              err => {
-                //alert(JSON.stringify(err))
-              }
-            );
-          },
-          err => {
-            //alert(JSON.stringify(err))
-          }
-        );
+  //             },
+  //             err => {
+  //             }
+  //           );
+  //         },
+  //         err => {
+  //         }
+  //       );
         cur.setState({x2: false});
    
 

@@ -61,7 +61,7 @@ return(
                  <Text style={{fontSize:16,textAlign:"right",color:"#003580",fontFamily:'TajawalBold0'}}>{strings('setting.profile',lang)}</Text>
               </Left>
               <Right>
-                 <Text style={{fontSize:16,textAlign:"right",color:"#gray",fontFamily:'TajawalRegular0'}}>{this.props.customerInfo[0].customers_firstname} {this.props.customerInfo[0].customers_lastname}</Text>
+                 <Text style={{fontSize:16,textAlign:"right",color:"gray",fontFamily:'TajawalRegular0'}}>{this.props.customerInfo[0].customers_firstname} {this.props.customerInfo[0].customers_lastname}</Text>
               </Right>
             </CardItem>
             :null}
@@ -74,7 +74,7 @@ return(
                          <Text style={{fontSize:16,textAlign:"right",color:"#003580",fontFamily:'TajawalBold0'}}>{strings('setting.profile',lang)}</Text>
                       </Right>
                       <Left>
-                         <Text style={{fontSize:16,textAlign:"right",color:"#gray",fontFamily:'TajawalRegular0'}}>{this.props.customerInfo[0].customers_firstname} {this.props.customerInfo[0].customers_lastname}</Text>
+                         <Text style={{fontSize:16,textAlign:"right",color:"gray",fontFamily:'TajawalRegular0'}}>{this.props.customerInfo[0].customers_firstname} {this.props.customerInfo[0].customers_lastname}</Text>
                       </Left>
                     </CardItem>
                     :null}

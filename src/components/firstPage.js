@@ -8,7 +8,12 @@ import {strings} from '../../Locales/i18n';
 import * as sideBarAction from '../actions/sideBarAction';
 import { connect } from 'react-redux';
 import { SocialIcon } from 'react-native-elements';
-import { Font, AppLoading,SplashScreen,Facebook,Permissions, Notifications,Constants} from 'expo';
+import { AppLoading,SplashScreen,Facebook, Notifications} from 'expo';
+import * as Permissions from 'expo-permissions'
+import * as Font from 'expo-font';
+
+import Constants from 'expo-constants'
+
 import Header from './AuthHeader'
 import SideBar from "./sideBar";
 import * as Expo from 'expo';

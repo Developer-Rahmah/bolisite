@@ -9,7 +9,12 @@ import {strings} from '../../Locales/i18n';
 import Header from './header';
 import SideBar from "./sideBar";
 import * as shippingInsuranceAction from '../actions/shippingInsuranceAction';
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import { Audio } from 'expo-av';
+import * as ImageManipulator from 'expo-image-manipulator';
+
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import {scanned_id_image} from "../App";
 import Header2 from './headerWithoutArrow';
@@ -158,24 +163,24 @@ async takePicture() {
       cur.setState({x: false});
       cur.setState({loading_pass: true});
 
- ImageEditor.cropImage(
-        this.state.passport_image,
-        cropData,
-        uri => {
-          ImageStore.getBase64ForTag(
-            uri,
-            base64data => {
+//  ImageEditor.cropImage(
+//         this.state.passport_image,
+//         cropData,
+//         uri => {
+//           ImageStore.getBase64ForTag(
+//             uri,
+//             base64data => {
      
-               this.setState({passport_image64: base64data});
+//                this.setState({passport_image64: base64data});
 
-            },
-            err => {
-            }
-          );
-        },
-        err => {
-        }
-      );
+//             },
+//             err => {
+//             }
+//           );
+//         },
+//         err => {
+//         }
+//       );
  
 
     });
@@ -235,24 +240,24 @@ async takePictureId() {
       };
       var cur = this;
       this.setState({id_image: d.uri});
- ImageEditor.cropImage(
-        this.state.id_image,
-        cropData,
-        uri => {
-          ImageStore.getBase64ForTag(
-            uri,
-            base64data => {
+//  ImageEditor.cropImage(
+//         this.state.id_image,
+//         cropData,
+//         uri => {
+//           ImageStore.getBase64ForTag(
+//             uri,
+//             base64data => {
      
-               this.setState({id_image64: base64data});
+//                this.setState({id_image64: base64data});
 
-            },
-            err => {
-            }
-          );
-        },
-        err => {
-        }
-      );
+//             },
+//             err => {
+//             }
+//           );
+//         },
+//         err => {
+//         }
+//       );
       this.setState({x_id: false});
       this.setState({loading_id: true});
 

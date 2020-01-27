@@ -12,7 +12,11 @@ import {strings} from '../../Locales/i18n';
 import DatePicker from 'react-native-datepicker';
 import Header from './header';
 import SideBar from "./sideBar";
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import {scanned_passport_image} from "../App";
 import Header2 from './headerWithoutArrow';
@@ -250,26 +254,24 @@ async takePicture() {
       var cur = this;
       this.setState({passportImage: d.uri});
       // alert(data.width.toString() + "-" +data.height.toString()+"-"+data.pictureOrientation.toString())
- ImageEditor.cropImage(
-        this.state.passportImage,
-        cropData,
-        uri => {
-          ImageStore.getBase64ForTag(
-            uri,
-            base64data => {
+//  ImageEditor.cropImage(
+//         this.state.passportImage,
+//         cropData,
+//         uri => {
+//           ImageStore.getBase64ForTag(
+//             uri,
+//             base64data => {
      
-               this.setState({passportImage64: base64data});
+//                this.setState({passportImage64: base64data});
 
-            },
-            err => {
-              //alert(JSON.stringify(err))
-            }
-          );
-        },
-        err => {
-          //alert(JSON.stringify(err))
-        }
-      );
+//             },
+//             err => {
+//             }
+//           );
+//         },
+//         err => {
+//         }
+//       );
       cur.setState({x: false});
       cur.setState({loading_pass: true});
 

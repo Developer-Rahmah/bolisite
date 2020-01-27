@@ -12,7 +12,11 @@ import Header from './header';
 import Header2 from './headerWithoutArrow';
 
 import SideBar from "./sideBar";
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import {scanned_id_image} from "../App";
 const dimensions=Dimensions.get('window');
@@ -236,26 +240,24 @@ countYes=(value)=>{
             cur.setState({x: false});
             cur.setState({loading_id: true});
 
-       ImageEditor.cropImage(
-              this.state.id_image,
-              cropData,
-              uri => {
-                ImageStore.getBase64ForTag(
-                  uri,
-                  base64data => {
+      //  ImageEditor.cropImage(
+      //         this.state.id_image,
+      //         cropData,
+      //         uri => {
+      //           ImageStore.getBase64ForTag(
+      //             uri,
+      //             base64data => {
            
-                     this.setState({id_image64: base64data});
+      //                this.setState({id_image64: base64data});
       
-                  },
-                  err => {
-                    //alert(JSON.stringify(err))
-                  }
-                );
-              },
-              err => {
-                //alert(JSON.stringify(err))
-              }
-            );
+      //             },
+      //             err => {
+      //             }
+      //           );
+      //         },
+      //         err => {
+      //         }
+      //       );
        
       
           });

@@ -1,4 +1,4 @@
-import I18n from 'react-native-i18n';
+import I18n from "i18n-js";
 import {I18nManager,AsyncStorage} from 'react-native';
 // Import all locales
 import en from './en.json';

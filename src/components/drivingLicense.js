@@ -9,8 +9,13 @@ import SideBar from "./sideBar";
 import Header2 from './headerWithoutArrow';
 
 import {Actions} from "react-native-router-flux";
-import {  ImagePicker, Camera, Permissions,ImageManipulator,Audio } from 'expo';
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import axios from 'axios';
+import * as FileSystem from 'expo-file-system';
 
 // import {RNCamera} from 'react-native-camera';
 import * as drivingLicenseAction from '../actions/drivingLicenseAction';
@@ -759,19 +764,22 @@ class DrivingLicense extends Component{
         size:{width:d.width*.95, height:snappheight}
       }
       var cur=this;
-        ImageEditor.cropImage(d.uri,cropData,(uri)=>{
+        // ImageEditor.cropImage(d.uri,cropData,(uri)=>{
           
-          ImageStore.getBase64ForTag(uri,(base64data)=>{
+        //   ImageStore.getBase64ForTag(uri,(base64data)=>{
             
-            cur.uploadPost(base64data,d.uri);
-          },(err)=>{
-            //alert(JSON.stringify(err))
-          })
-        },(err)=>{
-          //alert(JSON.stringify(err))
-        });
+        //     cur.uploadPost(base64data,d.uri);
+        //   },(err)=>{
+        //   })
+        // },(err)=>{
+        // });
        
-        
+        const file = await FileSystem.readAsStringAsync(
+          d.uri,
+          {
+              encoding: FileSystem.EncodingType.Base64,
+          });
+          cur.uploadPost(file,d.uri);
       
         
       });

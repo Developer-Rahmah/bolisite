@@ -5,10 +5,14 @@ import * as damageStepAction from '../actions/damageStepAction';
 import { connect } from 'react-redux';
 import {transparentBackground,centerStyle,sevicesCardItemStyle,servicesText,buttonText,whiteBackground} from '../theme';
 import {strings} from '../../Locales/i18n';
-import {  ImagePicker, Camera, Permissions,Location } from 'expo';
+import * as Location from 'expo-location';
+
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import Header from './header';
 import SideBar from "./sideBar";
-import { Constants } from 'expo';
+import Constants from 'expo-constants';
 const deviceId = Constants.deviceId;
 // const deviceId = DeviceInfo.getDeviceId();
 const dimensions=Dimensions.get('window');
@@ -248,7 +252,6 @@ gotToPayment=(leftImage,rightImage,frontImage,backImage)=>{
 
 }
 gotToPayment2=(leftImage,rightImage,frontImage,backImage)=>{
-  alert("hi",this.props.companyOldPrice,"+",this.props.companyDiscountRate)
 
   const {carInformation,insuranceCompaanyId,addons,total,user_id}=this.props
   var addons1=[]

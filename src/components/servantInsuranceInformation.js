@@ -5,7 +5,11 @@ import {CardItem,Body,Button,Text, Icon,Item,Input,Picker,Card,Label,Drawer,Left
 import {transparentBackground,transparentBorder,inputStyle,centerStyle,buttonStyle,buttonText,pickerStyle,labelStyle} from '../theme';
 import * as shippingInsuranceAction from '../actions/shippingInsuranceAction';
 import * as servantInsuranceAction from '../actions/servantInsuranceAction';
-import {ImagePicker, Camera, Permissions, ImageManipulator, Audio} from "expo";
+import * as ImageManipulator from 'expo-image-manipulator';
+import { Audio } from 'expo-av';
+import * as ImagePicker from 'expo-image-picker';
+import { Camera } from 'expo-camera';
+import * as Permissions from 'expo-permissions'
 import {uploadButton,continueText,uploadLicenseText} from '../assests/styles/drivingLicenseStyles';
 import DropdownAlert from 'react-native-dropdownalert';
 import { connect } from 'react-redux';
@@ -212,26 +216,24 @@ console.log("zzz")
           cur.setState({loading_pass: true});
 
           // alert(data.width.toString() + "-" +data.height.toString()+"-"+data.pictureOrientation.toString())
-     ImageEditor.cropImage(
-            this.state.passportImage,
-            cropData,
-            uri => {
-              ImageStore.getBase64ForTag(
-                uri,
-                base64data => {
+    //  ImageEditor.cropImage(
+    //         this.state.passportImage,
+    //         cropData,
+    //         uri => {
+    //           ImageStore.getBase64ForTag(
+    //             uri,
+    //             base64data => {
          
-                   this.setState({passportImage64: base64data});
+    //                this.setState({passportImage64: base64data});
     
-                },
-                err => {
-                  //alert(JSON.stringify(err))
-                }
-              );
-            },
-            err => {
-              //alert(JSON.stringify(err))
-            }
-          );
+    //             },
+    //             err => {
+    //             }
+    //           );
+    //         },
+    //         err => {
+    //         }
+    //       );
      
     
         });

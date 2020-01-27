@@ -27,7 +27,8 @@ import { Tooltip } from 'react-native-elements';
 
 import {connect} from "react-redux";
 import {strings} from "../../Locales/i18n";
-import {Constants} from "expo";
+import Constants from 'expo-constants'
+
 import {VerticalWrapper} from "./common/VerticalWrapper";
 var typeInsurancee=""
 const dimensions = Dimensions.get("window");
